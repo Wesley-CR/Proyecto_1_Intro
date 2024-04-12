@@ -19,9 +19,9 @@ def numeroInvalido(repeticiones: int, numeros: list[int], divisor: list[int] = [
             return True
    return False
     
-def sacarDivisor(nominador: int, resultado: int) -> list[int]:
+def sacarDivisor(numerador: int, resultado: int) -> list[int]:
    divisorPartes = []
-   divisor = nominador//resultado
+   divisor = numerador//resultado
    while divisor != 0 :
       divisorPartes.append(divisor%10)
       divisor = divisor//10
