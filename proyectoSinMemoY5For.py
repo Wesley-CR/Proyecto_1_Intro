@@ -40,6 +40,7 @@ def encontrador(n,reps) -> list[str]:
                if numeroInvalido(reps,[a,b,c,d]): continue
                for e in range(10):
                   numeros = [a,b,c,d,e]
+                  if tmp//n < 1000: continue
                   if numeroInvalido(reps,numeros): continue
                   tmp = a * 10000 + b * 1000 + c * 100 + d * 10 + e
                   if a % n == 0 and not numeroInvalido(reps, numeros, sacarDivisor(a, n)):

@@ -36,6 +36,7 @@ def encontrador(n,reps) -> list[str]:
         return respuestas[tmpForDictionary]
     for a in range(100000):
         a_list = []
+        if tmp//n < 1000: continue
         for x in str(a):
             a_list.append(int(x))
         if numeroInvalido(reps, a_list): continue
